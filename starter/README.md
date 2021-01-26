@@ -52,6 +52,7 @@ npm start
 ### Backend
 
 The `./backend` directory contains a partially completed Flask and SQLAlchemy server. You will work primarily in app.py to define your endpoints and can reference models.py for DB and SQLAlchemy setup. 
+
 [View the README.md within ./backend for more details.](./backend/README.md)
 
 
