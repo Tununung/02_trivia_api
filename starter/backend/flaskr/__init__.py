@@ -55,7 +55,8 @@ def create_app(test_config=None):
     def get_categories():
         try:
             total_categories = Category.query.order_by(Category.id).all()
-            categories = {category.id: category.type for category in total_categories}
+            categories = {category.id: category.type for category in
+                          total_categories}
 
             if len(categories) == 0:
                 abort(404)
@@ -76,7 +77,8 @@ def create_app(test_config=None):
 
   TEST: At this point, when you start the application
   you should see questions and categories generated,
-  ten questions per page and pagination at the bottom of the screen for three pages.
+  ten questions per page and pagination at the bottom of the screen 
+  for three pages.
   Clicking on the page numbers should update the questions. 
   '''
 
@@ -107,7 +109,8 @@ def create_app(test_config=None):
     '''
   Create an endpoint to DELETE question using a question ID. 
 
-  TEST: When you click the trash icon next to a question, the question will be removed.
+  TEST: When you click the trash icon next to a question, the question 
+  will be removed.
   This removal will persist in the database and when you refresh the page. 
   '''
 
