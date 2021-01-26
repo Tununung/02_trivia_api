@@ -22,10 +22,6 @@ Pay special attention to what data the frontend is expecting from each API respo
 
 [View the README.md within ./frontend for more details.](./frontend/README.md)
 
-### Running the Application
-
-The `./frontend` directory contains a complete React frontend to consume the data from the Flask server. 
-
 ### Getting Setup
 
 > _tip_: this frontend is designed to work with [Flask-based Backend](../backend). It is recommended you stand up the backend first, test using Postman or curl, update the endpoints in the frontend, and then the frontend should integrate smoothly.
