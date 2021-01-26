@@ -122,14 +122,11 @@ This README is missing documentation of your endpoints. Below is an example for 
       "question": "What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
     },
 
-    ...
-
   ], 
   "success": true, 
   "total_questions": 19
 }
 ```
-
 #### DELETE /question/{question_id}
  - Deletes the question of the given ID if it exists. Returns the id of the deleted question, success value, total number of questions, and question list based on the current page number.
 > Example : `curl -X DELETE http://127.0.0.1:5000/questions/19?page=2`
@@ -138,9 +135,6 @@ This README is missing documentation of your endpoints. Below is an example for 
 {
   "deleted": 19, 
   "questions": [
-    
-    ...
-    
     {
       "answer": "One", 
       "category": 2, 
@@ -155,15 +149,11 @@ This README is missing documentation of your endpoints. Below is an example for 
       "id": 20, 
       "question": "What is the heaviest organ in the human body?"
     }, 
-
-    ...
-
   ], 
   "success": true, 
   "total_questions": 18
 }
 ```
-
 #### POST /questions
 - Creates a new question using the submitted question, answer, difficulty, and category.
 - Returns the id of the created question, success value, total number of questions, and list of questions.
@@ -187,15 +177,11 @@ This README is missing documentation of your endpoints. Below is an example for 
       "id": 4, 
       "question": "What actor did author Anne Rice first denounce, then praise in the role of her beloved Lestat?"
     }, 
-
-    ...
-
   ], 
   "success": true, 
   "total_questions": 19
 }
 ```
-
 #### POST /questions/search
 - Returns a list of questions based on a search term (returning any questions for whom the search term is a substring of the question), current category id, success value, and total number of questions that match the given search term.
 > Example: `curl http://127.0.0.1:5000/questions/search -X POST -H "Content-Type: application/json" -d '{"searchTerm":"title"}'`
@@ -276,10 +262,6 @@ This README is missing documentation of your endpoints. Below is an example for 
   }, 
   "success": true
 }
-```
-
-
-
 
 ## Testing
 To run the tests, run
